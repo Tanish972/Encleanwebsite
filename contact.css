@@ -1,0 +1,169 @@
+/* contact us section */
+.contact-section{
+    /* border: 2px solid red; */
+    background-color: beige;
+}
+
+.upperhalf{
+    display: flex;
+    /* border: 2px solid blue; */
+    margin: 2px 2px;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+.contact-left{
+    display: flex;
+    width: 45vw;
+    /* background-color: rebeccapurple; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-left h2{
+    margin: 16px 4px;
+    font-size: 40px;
+}
+.contact-left p{
+    margin: 2px 4px;
+    font-size: 17px;
+}
+.contact-right{
+    width: 50vw;
+}
+.contact-right img{
+    border-radius: 12px;
+    margin: 2px 2px 2px 2px;
+    
+}
+.lowerhalf{
+  
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-bottom: 25px;
+
+}
+.lowerhalf .box-details{
+    width: 30vw;
+    border: 2px solid rgb(161, 159, 159);
+    border-radius: 7px;
+    height: 20vw;
+    box-shadow: 4px 4px 4px grey;
+    position: relative;
+    top: -60px;
+    background-color: white;
+}
+.lowerhalf .box-appointment{
+    width: 30vw;
+    background-color: white;
+    border: 2px solid rgb(161, 159, 159);
+    border-radius: 7px;
+    margin-left: 16px;
+    height: 20vw;
+    position: relative;
+    box-shadow: 4px 4px 4px grey;
+    top: -60px;
+}
+.box-details h4{
+    text-align: center;
+    margin: 8px 2px;
+    font-size: 18px;
+}
+.message{
+    margin: 22px 10px;
+
+}
+.box-details .info{
+    display: flex;
+    align-items: center;
+    margin: 5px 6px;
+}
+.info p{
+    margin: 2px 8px;
+}
+.box-details div img{
+    width: 25px;
+}
+.box-appointment h4{
+    text-align: center;
+    margin: 8px 2px;
+    font-size: 18px;
+
+}
+.appointment-details{
+    display: flex;
+    flex-direction: column;
+}
+.appointment-details .data{
+    margin: 6px 50px;
+}
+.data .style{
+   margin-left: 4px;
+    float: right;
+    width: 45%;
+    height: 21px;
+    padding: 2px 6px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    box-shadow: 4px 4px 9px rgb(207, 195, 195);
+}
+.data label{
+    height: 21px;
+    padding: 2px 6px;
+}
+.data button{
+  cursor: pointer;
+   border: 2px solid rgb(103, 196, 219);
+   background-color: rgb(130, 130, 235);
+   height: 32px;
+   width: 62px;
+   border-radius: 8px;
+   float: right;
+   margin-right: 9px;
+}
+.data button:hover{
+  background-color: rgb(94, 94, 235);
+}
+
+/* media query is here */
+@media screen and (max-width: 1285px){
+    .contact-right{
+        display: none;
+    }
+    .contact-left{
+        width: 100vw;
+    }
+    .lowerhalf{
+        margin-top: 23px;
+    }
+    .lowerhalf .box-details{
+        height: auto;
+        top: 0px;
+        width: 45vw;
+    }
+    .lowerhalf .box-appointment{
+        height: auto;
+        top: 0px;
+        width: 45vw;
+    }
+    .appointment-details .data{
+        margin: 6px 10px;
+    }
+}
+
+@media screen and (max-width: 683px){
+    .lowerhalf{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .lowerhalf .box-appointment{
+      margin:  15px 0px;
+      width: 80vw;
+    }
+    .lowerhalf .box-details{
+      margin:  15px 0px;
+      width: 80vw;
+    }
+}
