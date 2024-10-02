@@ -1,0 +1,67 @@
+/* mission section */
+.mission-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.mission-container h3{
+    margin: 12px 2px;
+    font-size: 38px;
+}
+.box-mission{
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    align-items: center;
+    margin: 8px 2px;
+}
+.box-mission .left{
+    width: 35vw;
+    padding: 8px 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.box-mission .left h3{
+    font-size: 21px;
+    margin: 12px 2px;
+}
+.box-mission .left p{
+    font-size: 16px;
+    margin: 1px 2px;
+    text-align: justify;
+}
+.box-mission .right{
+    width: 30vw;
+    padding: 17px 4px;
+    
+}
+.box-mission .right img{
+    width: 30vw;
+    border-radius: 12px;
+    box-shadow: 2px 4px 4px gray;
+}
+/* media is here */
+@media screen and (max-width: 860px) {
+    .box-mission{
+        width: 90vw;
+    }
+    .box-mission .left{
+        width: 50vw;
+    }
+    .left h3{
+        font-size: 18px;
+    }
+    .left p{
+        font-size: 14px;
+    }
+    .right{
+        width: 35vw;
+    }
+    .right img{
+        width: 35vw;
+        height: 35vw;
+    }
+}
